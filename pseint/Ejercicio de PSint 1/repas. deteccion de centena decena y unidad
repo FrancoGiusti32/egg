@@ -1,0 +1,14 @@
+Algoritmo nombre
+	Definir Centena, Decena, Unidad Como Entero
+	Definir Num1 Como Real
+	
+	Escribir "inserte un numero de 3 cifras"
+	Leer Num1
+	
+	Centena = Trunc(Num1/100) 
+	Decena = trunc((Num1-(Centena*100))/10)
+	Unidad = ((num1-(Centena*100)-(Decena*10)))
+	
+	Escribir "la centena es: [", Centena, "] .Y su decena es: [", Decena, "] . Y su unidad es: [", Unidad , "]"
+
+FinAlgoritmo

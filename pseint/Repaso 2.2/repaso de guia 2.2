@@ -1,0 +1,70 @@
+Algoritmo sin_titulo
+	Definir Usuario, Contrasena Como Caracter
+	Definir  j, i, x, Cantidad, Peso, Precio, Total, h, saldo  Como Real
+	Definir Login, salida Como Logico
+	j=0
+	total = 0
+	salida = Falso
+	peso = 0
+	Contrasena = "x"
+	saldo = 0
+	Login = Falso
+	Escribir "Ingrese Usuraio"
+	Leer Usuario
+	
+	
+	si Usuario = "Albus_D"
+		Mientras j <>3 y Contrasena <> "caramelosDeLimon" Hacer
+			Escribir "Ingrese contraseña"
+			Leer Contrasena
+			j = j+1
+		FinMientras
+		si Contrasena = "caramelosDeLimon"
+			Login= Verdadero
+		FinSi
+	FinSi
+	
+	si Login = Verdadero
+	hacer
+		Hacer
+			Escribir "[1]Ingresar Botellas, [2]Consultar Saldo, [3] salir"
+			Leer i
+		Mientras Que  i <> 1 y i <> 3 y i <> 2
+		Segun i
+			1:
+				Escribir "Ingrese la cantidad de botellas"
+				Leer Cantidad
+				Para x=1 Hasta  Cantidad
+					Peso = Aleatorio(100,3000)
+					si peso <= 500
+							Precio= 50
+						SiNo
+							si peso > 500 y peso <= 1500
+								Precio= 125
+								sino 
+								Precio= 200
+							FinSi
+						finSi
+						Total = Total + Precio
+				FinPara
+				Escribir "EL valor que se ofrese es: " Total
+				Escribir "[1] aceptar [2] negar"
+				Leer h
+				si h = 1
+					saldo = saldo + total
+					Escribir "Saldo acreditado"
+				SiNo
+					Escribir "Devolviendo material"
+				FinSi
+			2:
+				Escribir "Su saldo es: " saldo
+			3:
+				salida = Verdadero
+				escribir "Adios"
+		FinSegun
+	Mientras Que salida <> Verdadero
+	SiNo
+		Escribir "Usuario o contraseña incorrecos"
+	FinSi
+	
+FinAlgoritmo
