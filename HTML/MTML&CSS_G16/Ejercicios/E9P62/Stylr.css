@@ -1,0 +1,49 @@
+#titulo{
+    color: aquamarine;
+}
+table {
+    border-collapse: separate;
+  }
+strong{
+    color: red;
+}
+span.destacado {
+    color: yellow;
+}
+h2 {
+    color: blue;
+}
+a:first-of-type{
+    color: red;
+}
+a{
+    color: green;
+}
+em{
+    color: blue;
+}
+span.especial{
+    color: purple;
+}
+th.especial{
+    color: yellow;
+}
+th {
+    color: red;
+}
+td{
+    color: green;
+}
+td strong{
+    color: yellow;
+}
+p{
+    color: green;
+}
+p span .especial{
+    color: fuchsia;
+}
+caption{
+    display:none;
+}
+
